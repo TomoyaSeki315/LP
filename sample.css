@@ -1,0 +1,120 @@
+#hed{
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: grey;
+    top: -8px;
+    left: -8px;
+}
+
+#nav{
+    margin: auto 0;
+}
+
+#All_li{
+    display: inline-block;
+}
+
+#foot{
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: grey;
+    top: 10px;
+    left: -8px;
+}
+
+#td_1{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background: cornflowerblue;
+}
+
+#td_2{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background: cornflowerblue;
+}
+
+#td_3{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background: cornflowerblue;
+}
+
+#number{
+    display: inline-block;
+}
+
+#text{
+    display: inline-block;
+}
+
+
+#answer{
+    display: inline-block;
+}
+
+.btnBox{
+    list-style-type: none;
+}
+
+.btnRed{
+    width: 200px;
+    height: 50px;
+    margin-right: 30px;
+    background-color: red;
+    border-bottom: solid 4px #110e0e;
+    border-radius: 10px;
+}
+.btnRed:hover{
+    background: #8d0909; /* 少し濃い緑色 */
+    border: solid 4px #630707; /* 少し濃い緑色 */
+  }
+
+.btnRed:active{
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        border-bottom: none;
+}
+
+.btnBlue{
+    width: 200px;
+    height: 50px;
+    margin-right: 30px;
+    background-color: blue;
+    border-bottom: solid 4px #110e0e;
+    border-radius: 10px;
+}
+.btnBlue:hover{
+    background: #230870; /* 少し濃い緑色 */
+    border: solid 4px #160c50; /* 少し濃い緑色 */
+  }
+
+.btnBlue:active{
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        border-bottom: none;
+}
+
+.btnGreen{
+    width: 200px;
+    height: 50px;
+    margin-right: 30px;
+    background-color: Green;
+    border-bottom: solid 4px #110e0e;
+    border-radius: 10px;
+}
+.btnGreen:hover{
+    background: #065022; /* 少し濃い緑色 */
+    border: solid 4px #062c0b; /* 少し濃い緑色 */
+  }
+
+.btnGreen:active{
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        border-bottom: none;
+}

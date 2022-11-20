@@ -1,0 +1,201 @@
+
+/* ヘッダー */
+#hed{
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: white;
+    top: -8px;
+    z-index: 100;
+}
+.td{
+    width: 33%;
+    height: 25%;
+}
+
+.td-middle{
+    width: 80%;
+}
+
+.td-center{
+    width: 10%;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 170px;
+    margin-top: 10px;
+}
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    margin: auto 0;
+}
+
+#All_li{
+    margin-left: 100px;
+    margin-top: 25px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#foot{
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: grey;
+    top: 10px;
+    left: -8px;
+}
+.top{
+    position: relative;
+    width: auto;
+    height: 680px;
+    margin: 0 auto;
+}
+
+.adel-head{
+    position: relative;
+    z-index: 100;
+    padding: 10px;
+    animation: fadeIn-left 5s ease 1s 1 normal backwards;
+    right: 7%;
+}
+
+@keyframes fadeIn-left {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.adel-ocian{
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    padding: 10px;
+    animation: fadeIn-right 5s ease 1s 1 normal backwards;
+    left: 30%;
+}
+@keyframes fadeIn-right {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.head{
+    width: 80%;
+    height: 80%;
+}
+.ocian{
+    width: 80%;
+    height: 80%;
+}
+
+.sun{
+    width: 80%;
+    height: 760px;
+}
+
+.sleep{
+    width: 80%;
+    height: 760px;
+}
+
+.video-box {
+    position: relative;
+    overflow: hidden;
+  }
+  .title_mp4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+/*画面サイズが変わっても常に動画の中央が表示されるようにする*/
+/*動画よりも画面が横に長くなるとき用*/
+/* @media (aspect-ratio: 16/9), (min-aspect-ratio: 16/9) {
+    video {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  */
+/*動画よりも画面が縦に長くなるとき用*/
+@media screen and(max-width: 480px) {
+    video {
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+  
+/* overlay */
+/*
+.overlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+*/
+/*　タイトル系CSS           */
+.title_name{
+    position: relative;
+    z-index: 100;
+    font-size: 100px;
+    text-align: center;
+    bottom: 50%;
+    animation: fadeIn-fast 1s ease 1s 1 normal backwards;
+}
+
+.title_discript{
+    z-index: 100;
+    position: relative;
+    font-size: 25px;
+    left: 25%;
+    animation: fadeIn-fast 3s ease 1s 1 normal backwards;
+}
+
+@keyframes fadeIn-fast {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.title_table{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.site{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}

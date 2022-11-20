@@ -1,0 +1,586 @@
+
+/* ヘッダー */
+#hed{
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: white;
+    top: -8px;
+    z-index: 100;
+}
+.td{
+    width: 33%;
+    height: 25%;
+}
+
+.td-middle{
+    width: 80%;
+}
+
+.td-center{
+    width: 10%;
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+  top: 23px;
+  transform: scale(-1, 1);
+  position: relative;
+}
+.img_nikukyu{
+    width: 15%;
+    display: inline-flex;
+    vertical-align: middle;
+    padding-bottom: 2%;
+}
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#nav{
+    margin: auto 0;
+}
+
+#All_li{
+    WIDTH: 15%;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#foot{
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: grey;
+    top: 10px;
+    left: -8px;
+}
+.top{
+    position: relative;
+    width: auto;
+    height: 680px;
+    margin: 0 auto;
+}
+
+.adel-head{
+    position: relative;
+    z-index: 100;
+    padding: 10px;
+    animation: fadeIn-left 5s ease 1s 1 normal backwards;
+    right: 7%;
+    bottom: 20px;
+}
+
+@keyframes fadeIn-left {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.adel-ocian{
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    padding: 10px;
+    animation: fadeIn-right 5s ease 1s 1 normal backwards;
+    left: 43%;
+    top: 26px;
+}
+@keyframes fadeIn-right {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.head{
+    width: 50%;
+    height: 60%;
+}
+.ocian{
+    width: 60%;
+    height: 60%;
+}
+
+.sun{
+    width: 80%;
+    height: 760px;
+}
+
+.sleep{
+    width: 80%;
+    height: 760px;
+}
+
+.video-box {
+    position: relative;
+    overflow: hidden;
+  }
+  .title_mp4 {
+    object-fit: cover;
+    top: -1%;
+    right: 0%;
+    position: absolute;
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+  }
+  
+/*画面サイズが変わっても常に動画の中央が表示されるようにする*/
+/*動画よりも画面が横に長くなるとき用*/
+/* @media (aspect-ratio: 16/9), (min-aspect-ratio: 16/9) {
+    video {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  */
+/*動画よりも画面が縦に長くなるとき用*/
+@media screen and(max-width: 480px) {
+    video {
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+  
+/* overlay */
+/*
+.overlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+*/
+/*　タイトル系CSS           */
+.title_name{
+    position: absolute;
+    left: 35%;
+    z-index: 100;
+    font-size: 100px;
+    text-align: center;
+    bottom: 55%;
+    animation: fadeIn-fast 1s ease 1s 1 normal backwards;
+}
+.title_dsc{
+  position: absolute;
+  margin-top:15px;
+  left: 28%;
+}
+.title_discript{
+    display: block;
+    z-index: 100;
+    position: relative;
+    font-size: 25px;
+    left: 25%;
+    animation: fadeIn-fast 3s ease 1s 1 normal backwards;
+}
+
+@keyframes fadeIn-fast {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.title_table{
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+.sub_title{
+    display: block;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+.sub_title_service{
+  width: 100%;
+  margin-left: 200px;
+  font-size: 50px;
+  padding: 6px 35px;
+  border-radius: 20px;
+  background-color: #92bd92;
+  box-shadow: inset 0px 0px 5px 5px #52b141;
+}
+.discript{
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 280px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 30px;
+
+}
+
+.contents{
+    width: 33%;
+    height: 33%;
+    display: flex;
+    text-align: center;
+    padding-top: 3%;
+}
+.left-margin{
+    margin-left:30px;
+
+}
+.img_block{
+  width: 300px;
+}
+
+.img_block_service{
+  width: 500px;
+  margin-left: 100px;
+}
+
+.left{
+    display: inline-block;
+    text-align: left;
+}
+
+.site{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.site_bac{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-image : url(../img/haikei.png);
+
+}
+
+/* ふわっと表示 */
+img {
+    max-width: 100%;
+}
+.photo-list {
+    padding: 150px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-list li {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+@media screen and (max-width: 768px) {
+    .photo-list li:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 769px) {
+    .photo-list li {
+        width: 32%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+    .photo-list li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+/* アニメーション設定 */
+.scr-target {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+}
+.scr-target.is-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
+}
+
+
+.timeline {
+    height: 3200px;
+    width: 100%;
+    margin: 28px auto;
+    border: 1px solid #eeeeee;
+}
+
+.timeline-list {
+    padding: 40px 0;
+}
+
+.timeline-list-item {
+    display: flex;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.timeline-list-item .date {
+    width: 11%;
+    padding: 0 0 0 20px;
+    color: #888888;
+    font-weight: bold;
+}
+
+.timeline-list-item .content {
+    position: relative;
+    width: 80%;
+    padding: 0 20px 60px 30px;
+    border-left: 1px solid #aaaaaa;
+}
+
+.timeline-list-item .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; 
+    width: 20px;
+    height: 20px;
+    background-color: #00c2bc;
+    border-radius: 10px;
+}
+
+/* チェックボックスカスタム */
+.message{ 
+  display: none;
+  
+}
+input.toggle:checked ~ .message{
+  display: inline-flex;
+  animation: fadein 1.5s;
+}
+@keyframes fadein-chk{
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
+
+ /*　デフォルトのチェックボックスを非表示*/
+ input {
+    display: none;
+  }
+
+/*チェック中のラベルにCSSを適用*/
+  input:checked + label img ~ .message{
+    display: inline-flex;
+    animation: fadein-chk 1.5s;
+    margin-top: 60px;
+    vertical-align: top;
+    font-size: 20px;
+  }
+  .box-img{
+    width: 40%;
+    margin-left: -95px;
+  }
+
+  /* チェックボックスカスタム2 */
+.message2{ 
+    display: none;
+  }
+  input.toggle2:checked ~ .message2{
+    display: inline-flex;
+    animation: fadein 1.5s;
+  }
+  
+   /*　デフォルトのチェックボックスを非表示*/
+   input {
+      display: none;
+    }
+  
+  /*チェック中のラベルにCSSを適用*/
+    input:checked + label img ~ .message2{
+      display: inline-flex;
+      animation: fadein-chk 1.5s;
+      margin-top: 120px;
+      vertical-align: top;
+      font-size: 20px;
+    }
+  
+     /* チェックボックスカスタム3 */
+.message3{ 
+    display: none;
+  }
+  input.toggle3:checked ~ .message3{
+    display: inline-flex;
+    animation: fadein 1.5s;
+  }
+  
+   /*　デフォルトのチェックボックスを非表示*/
+   input {
+      display: none;
+    }
+  
+  /*チェック中のラベルにCSSを適用*/
+    input:checked + label img ~ .message3{
+      display: inline-flex;
+      animation: fadein-chk 1.5s;
+      margin-top: 120px;
+      vertical-align: top;
+      font-size: 20px;
+    }
+  
+    /* チェックボックスカスタム4 */
+.message4{ 
+    display: none;
+  }
+  input.toggle4:checked ~ .message4{
+    display: inline-flex;
+    animation: fadein 1.5s;
+  }
+  
+   /*　デフォルトのチェックボックスを非表示*/
+   input {
+      display: none;
+    }
+  
+  /*チェック中のラベルにCSSを適用*/
+    input:checked + label img ~ .message4{
+      display: inline-flex;
+      animation: fadein-chk 1.5s;
+      margin-top: 120px;
+      vertical-align: top;
+      font-size: 20px;
+    }
+
+    /* チェックボックスカスタム5 */
+.message5{ 
+    display: none;
+  }
+  input.toggle5:checked ~ .message5{
+    display: inline-flex;
+    animation: fadein 1.5s;
+  }
+  
+   /*　デフォルトのチェックボックスを非表示*/
+   input {
+      display: none;
+    }
+  
+  /*チェック中のラベルにCSSを適用*/
+    input:checked + label img ~ .message5{
+      display: inline-flex;
+      animation: fadein-chk 1.5s;
+      margin-top: 120px;
+      vertical-align: top;
+      font-size: 20px;
+    }
+
+
+    /* チェックボックスカスタム6 */
+.message6{ 
+    display: none;
+  }
+  input.toggle6:checked ~ .message6{
+    display: inline-flex;
+    animation: fadein 1.5s;
+  }
+  
+   /*　デフォルトのチェックボックスを非表示*/
+   input {
+      display: none;
+    }
+  
+  /*チェック中のラベルにCSSを適用*/
+    input:checked + label img ~ .message6{
+      display: inline-flex;
+      animation: fadein-chk 1.5s;
+      margin-top: 120px;
+      vertical-align: top;
+      font-size: 20px;
+    }
+
+
+
+.service {
+  display: inline-flex;
+  margin-top: 150px;
+}
+
+.discript_box{
+  margin-left: 150px;
+}
+
+.service_discript{
+  font-size: 30px;
+  list-style-type: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.button{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-top: 70px;
+  width: 650px;
+  height: 80px;
+  border: none;
+  background-color: green;
+  border: 5px solid #0a440e;
+  border-radius: 50px;
+  box-shadow: 5px 5px 0px 0px #5a5e59;
+}
+.button:hover{
+  background: #065022; /* 少し濃い緑色 */
+  border: solid 4px #062c0b; /* 少し濃い緑色 */
+}
+
+.button:active{
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+      border-bottom: none;
+}
+
+.area{
+  margin-top: 100px;
+  padding-top: 100px;
+  width: 100%;
+  height: 1000px;
+  background-image: url(../img/Green_back.png);
+  /* box-shadow: inset 0px 0px 20px 20px #fff; */
+}
+
+.text-font-size{
+  font-size: 35px;
+  font-family: monospace;
+}
+
+.sec_four{
+  display: none;
+}
+.Introduction_dog{
+  width: 80%;
+  text-align: right;
+  font-size: 50px;
+  padding: 6px 70px 0px 6px;
+  border-radius: 0 50px 50px 0;
+  background-color: #92bd92;
+  box-shadow: inset 0px 0px 5px 5px #52b141;
+}
+.area_dog{
+  margin-top: 100px;
+  padding-top: 100px;
+  width: 100%;
+  height: 1000px;
+ /*  box-shadow: inset 0px 0px 20px 20px #fff; */
+}
+
+
