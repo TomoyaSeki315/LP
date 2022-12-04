@@ -4,10 +4,14 @@ header{
     display: flex;
 }
 
+footer{
+    text-align: center;
+}
 body{
     margin: 0;
     overflow-x: hidden;
-
+    font-weight: 900;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 li{
@@ -16,6 +20,11 @@ li{
 nav{
     width: 100%;
 }
+
+img {
+    max-width: 100%;
+}
+
 .h_li{
     display: inline;
 }
@@ -58,8 +67,8 @@ nav{
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   }
 .title_section{
-    height: 900px;
-    background-color: #4caf50b3;
+    height: 1000px;
+    background-color: #38b48b;
 }
 
 .chatchcopy{
@@ -81,7 +90,7 @@ nav{
 }
 .threeContents{
     position: relative;
-    bottom: 314px;
+    bottom: 190px;
 }
 .threeContentBox{
     width: 1300px;
@@ -112,31 +121,25 @@ nav{
 
 .dog{
     position: absolute;
-    width: 500px;
-    height: 400px;
     top: 300px;
     z-index: 100;
 }
 
 .nikuBox{
     position: absolute;
-    right: 235px;
-    width: 300px;
-    height: 300px;
+    right: 345px;
     transform: rotate(-30deg);
 }
 .dogBox{
     position: relative;
-    width: 800px;
-    height: 800px;
     left: 72px;
     bottom: 60px;
-    transform: scale(-1, 1);
 }
 
 
 /* お悩み   */
 .sec_worries{
+    background-color: #6db59d;
     height: 1600px;
     width: 100%;
 }
@@ -147,20 +150,23 @@ nav{
     display: inline-block;
     width: 100%;
     height: 85px;
-    border: 15px double #37a337;
+    border-bottom: 15px double #3862b5 ;
+    border-top: 15px double #3862b5 ;
     text-align: center;
     font-size: 40px;
     font-weight: 900;
     padding-top: 27px;
 }
+
 .nav_worries{
     width: 80%;
-    margin-left: 13%;
-    
+    margin-left: 8%;
 }
+
 .ui_worries{
     display: inline-flex;
 }
+
 .li_worries{
     width: 470px;
     height: 343px;
@@ -171,7 +177,7 @@ nav{
     font-weight: 700;
     padding: 35px 10px 0px 10px;
     text-align: center;
-    background: #5ec173;
+    background: #38b48b;
     border-radius: 10px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
@@ -232,9 +238,10 @@ nav{
 
 /* お悩み解決   */
 .sec_resolution{
-    height: 3400px;
+    height: auto;
     width: 100%;
-    background: linear-gradient(#abe7c23d, #26d72d78);
+    margin-bottom: -35px;
+    background: linear-gradient(#6db59d8a, #6db59d);
 }
 
 .re_arrowBox{
@@ -254,41 +261,41 @@ nav{
 .resolutionTxt{
     position: relative;
     display: inline-block;
-    font-size: 85px;
+    font-size: 65px;
     font-weight: bold;
-    border-bottom: 10px solid #014801;
-    color: #014801;
+    border-bottom: 10px solid #06480a;
+    color: #1d4a06;
     z-index: 100;
     background-color: #dfdf99;
-    width: 80%;
-    height: 175px;
+    width: auto;
+    height: 145px;
     border-radius: 50px;
+    box-shadow: 10px 5px 5px #00000061;
 }
 
 .inlineTxt{
     display: inline;
     color: red;
-    font-size: 130px;
+    font-size: 109px;
 }
 
 .img_imgdog{
-
+    display: block;
+    margin-left: auto;
 }
 
 .img_imghuman{
-    
+    display: block;
+    margin-right: auto;
 }
 .re_imgdogBox{
     position: absolute;
-    bottom: 95px;
-    transform: scale(1.5);
 }
 
 .re_imghumanBox{
-    position: absolute;
-    bottom: 70px;
-    left: 1500px;
-    transform: scale(1.3);
+    position: relative;
+    display: flex;
+    bottom: 500px;
 }
 
 .ul_4point{
@@ -298,19 +305,19 @@ nav{
 }
 .re_4pointBox{
     position: relative;
-    right: 292px;
-    width: 100%;
+    width: 100vw;
 }
 
 .img_4point{
-    transform: scale(0.9);
-    object-fit: cover;
+    width: 100vw;
+    transform: scale(1.1);
 }
 
 .ul_anypoint{
     display: block;
-    height: 2000px;
     width: 100%;
+    transform: scale(0.9);
+    margin-left: -5%;
 }
 
 
@@ -331,6 +338,10 @@ nav{
 
 
 /* カリキュラム */
+.sec_curriculum{
+    margin-bottom: -50px;
+    background-color: #4fffc4;
+}
 .curriculumTitleBox{
     width: 100%;
 }
@@ -338,8 +349,8 @@ nav{
     display: inline-block;
     width: 100%;
     height: 85px;
-    border-top: 15px double #37a337;
-    border-bottom: 15px double #37a337;
+    border-top: 15px double #3862b5;
+    border-bottom: 15px double #3862b5;
     text-align: center;
     font-size: 40px;
     font-weight: 900;
@@ -390,7 +401,7 @@ nav{
     height: 1310px;
     width: 100%;
     margin: 28px auto;
-    background-color: beige;
+    background-color: #3862b599;
 }
 
 .timeline-list {
@@ -416,7 +427,7 @@ nav{
     position: relative;
     width: 80%;
     padding: 0px 20px 60px 15px;
-    border-left: 20px solid #008037;
+    border-left: 20px solid #38b48b;
     font-size: 40px;
 }
 
@@ -427,7 +438,7 @@ nav{
     left: -40px;
     width: 60px;
     height: 60px;
-    background-color: #008037;
+    background-color: #38b48b;
     border-radius: 60px;
 }
 
@@ -444,6 +455,13 @@ nav{
     position: absolute;
     left: 1345px;
     padding-bottom: 120px;
+    transform: scale(1.3);
+}
+
+.curriculumImg2{
+    position: absolute;
+    left: 1260px;
+    padding-bottom: 600px;
     transform: scale(1.3);
 }
 .timeline-list-item-last {
@@ -471,14 +489,14 @@ nav{
     left: -20px;
     width: 60px;
     height: 60px;
-    background-color: #008037;
+    background-color: #38b48b;
     border-radius: 60px;
 }
 
 .chtcpy{
     height: 175px;
     padding-top: 1px;
-    background-color:#60ff2c;
+    background-color:#3862b5;
     font-size: 45px;
     text-align: center;
 }
@@ -487,7 +505,7 @@ nav{
     width: 0;
     height: 0;
     border: 65px solid;
-    border-color: #60ff2c transparent transparent transparent;
+    border-color: #3862b5 transparent transparent transparent;
     top: -11px;
     left: 45%;
     position: relative;
@@ -510,6 +528,7 @@ nav{
     width: 1000px;
     border-radius: 70px;
     background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
+    box-shadow: 10px 5px 5px #bc840447;
 }
 
 .Privilege p{
@@ -523,21 +542,19 @@ nav{
 .sec_lireses{
     height: 1409px;
     width: 100%;
-    background-color: #69dc3929;
+    padding-top: 50px;
+    background-color: #3fcc9d;
 }
 
 .TitleLireses{
-    display: inline-block;
     margin-top: 50px;
     font-size: 35px;
-    border-bottom: 15px double;
+    width: 100%;
 }
 
 .liresesImg{
     float: right;
-    margin-top: 150px;
-    margin-right: 155px;
-    transform: scale(1.5);
+    width: 35vw;
 }
 
 .icatchImg{
@@ -548,11 +565,13 @@ nav{
 
 .LiresesBox{
     margin-top: 50px;
-    display: block;
+    display: flex;
 }
 
 .TitleLireses h1 {
     margin: 0;
+    width: 800px;
+    border-bottom: 15px double;
 }
 .LiresesTxt{
     width: 1040px;
@@ -565,14 +584,95 @@ nav{
 
 /* 料金 */
 .sec_Price{
-    height: 1409px;
+    height: auto;
     width: 100%;
-    margin-top: 100px;
-    background-color: #4439dc29;
+    padding-bottom: 100px;
+    background-color: #3862b57a;
+}
+.TitlePrice{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+.PrinceTable{
+    width: 75vw;
+    height: 45vw;
+    background-color: #fff;
+    border: 3px solid;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 40px;
+    text-align: center;
 }
 
+.PrinceTable td{
+    border: 3px solid;
+    
+}
 
+.PrinceTable .tag{
+    background-color: #38b48b;
+}
+/* 一言 */
+.sec_msg{
+    padding: 50px 0;
+    margin-bottom: -29px;
+    background-color: #3862b591;
+}
+.sec_msg h1{
+    text-align: center;
+    font-size: 35px;
+}
+.sec_msg .wrap{
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.sec_msg  .wrap p{
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+}
 
+.sec_msg .pname{
+    text-align: right;
+    margin-right: 420px;
+    font-size: 25px;
+}
+
+.sec_inquiry h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+/* 問い合わせ   */
+.sec_inquiry{
+    background-color: #8b38b561;
+    padding-bottom: 50px;
+}
+.sec_inquiry h1{
+    padding-top: 50px;
+}
+.sec_inquiry .wrap{
+    margin: 0 auto;
+    text-align: center;
+    width: 65vw;
+}
+.sec_inquiry  .wrap p{
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+}
+.btn_inquiry{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 35vw;
+    height: 5vw;
+    font-size: 50px;
+    background-color: #30c936;
+    border: none;
+}
 /* ノートパソコン用 */
 @media screen and (max-width:1480px) {
     .title_section{
@@ -612,9 +712,7 @@ nav{
     }
 
     .nikuBox {
-        width: 400px;
-        height: 400px;
-        right: 145px;
+        right: 245px;
         bottom: 120px;
     }
 

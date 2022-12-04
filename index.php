@@ -4,7 +4,7 @@
 	} else {
 		$uri = 'http://';
 	}
-	$uri .= $_SERVER['HTTP_HOST'];
+	$uri .= $_SERVER['HTTP_HOST']; 
 //	header('Location: '.$uri.'/src/portfolio.php');
 //S	header('Location: '.$uri. '/hellow.php');
 	header('Location: '.$uri. '/src/lp/lp.php');

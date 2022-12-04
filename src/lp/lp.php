@@ -14,12 +14,15 @@
                 <ui style="
                 height: 80px;
                 display: flex;
-                border-bottom: 10px solid;
+                box-shadow: 0px 5px 5px #3862b5;
                 "> 
                     <li class="h_li"><img class="logo" src="../../img/LPLOGO.png" /></li> 
-                    <li class="h_li li_link">受講生の声</li> 
-                    <li class="h_li li_link">受講特典</li> 
-                    <li class="h_li li_link">料金</li> 
+                    <li class="h_li li_link"><a href="#iworries">学習の悩み</a></li> 
+                    <li class="h_li li_link"><a href="#ipoint">なろえんのポイント</a></li> 
+                    <li class="h_li li_link"><a href="#icurriculum">カリキュラム</a></li>
+                    <li class="h_li li_link"><a href="#ilireses">紹介企業</a></li> 
+                    <li class="h_li li_link"><a href="#iPrice">コース・料金</a></li>
+                    <li class="h_li li_link"><a href="#iinquiry">無料相談</a></li>
                 </ui>
             </nav>
         </header>
@@ -29,20 +32,22 @@
                 <ui> 
                     <li class="chatchcopy">
                         <img class="arrowBox" src="../../img/arrow_box.png" />
-                        <div class="arrowTxt">最短３ヶ月で未経験から<br>　　　WEBエンジニアになろう！</div>
+                    <!--    <div class="arrowTxt">最短３ヶ月で未経験から<br>　　　WEBエンジニアになろう！</div> -->
                     </li> 
                     <li class="threeContents">
                         <img class="threeContentBox" src="../../img/threeContent.png" />
+                        <!--
                         <div class="cntTxt1">　　　1対1<br>オンラインレッスン</div>
                         <div class="cntTxt2">WEB製作の<br>実績が作れる</div>
                         <div class="cntTxt3"> 　転職<br>企業紹介</div>
+                        -->
                     </li> 
-                    <li class="dog"><img class="nikuBox" src="../../img/nikukyu.png" /><img class="dogBox" src="../../img/icon_t.png" /></li> 
+                    <li class="dog"><img class="nikuBox" src="../../img/nikukyu.png" /><img class="dogBox" src="../../img/dogicon_800.png" /></li> 
                 </ui>
             </nav>
         </section>
         <!-- お悩み -->
-        <section class="sec_worries">
+        <section class="sec_worries" id="iworries">
             <div class="worriesTitle">
                 <p class="worriesTxt">こんなことでお悩みではありませんか？</p>
             </div>
@@ -75,15 +80,19 @@
         <!-- お悩み解決 -->
         <section class="sec_resolution">
             <div class="re_arrowBox"><img class="img_arrow" src="../../img/arrow1.png" /></div>
+            <nav style="height: 0px;">
+                <li class="re_imghumanBox">
+                    <img class="img_imghuman" src="../../img/dog_500px.png" />
+                    <img class="img_imgdog" src="../../img/human_500px.png" />
+                </li>
+            </nav>
             <nav>
                 <ul class="ul_resolution">
                     <li class="resolutionTxt">そんな悩みを<p class="inlineTxt">なろえん</p>が解決します！</li>
-                    <li class="re_imghumanBox"><img class="img_imgdog" src="../../img/human_500px.png" /></li>
-                    <li class="re_imgdogBox"><img class="img_imghuman" src="../../img/dog_500px.png" /></li>
                 </ul>
             </nav>
             <nav>
-                <ul class="ul_4point">
+                <ul class="ul_4point" id="ipoint">
                     <li class="re_4pointBox"><img class="img_4point" src="../../img/4point.png" /></li>
                 </ul>
             </nav>
@@ -101,7 +110,7 @@
             </nav>
         </section>
         <!-- カリキュラム   -->
-        <section class="sec_curriculum">
+        <section class="sec_curriculum" id="icurriculum">
             <nav>
                 <ul>
                 <div class="curriculumTitleBox">
@@ -141,6 +150,7 @@
                                         </br>
                                     </p>
                                 </div>
+                                <img class="curriculumImg2" src="../../img/PORTFOLIO_LOGO.png" />
                             </li>
                             <li class="timeline-list-item">
                                 <div class="date">3ヶ月</div>
@@ -155,6 +165,7 @@
                                         ②デモサイト作成<br>
                                     </p>
                                 </div>
+                                <img class="curriculumImg2" src="../../img/Laravel_logo.png" />
                             </li>
                             <li class="timeline-list-item-last">
                                 <div class="date">ゴール！</div>
@@ -177,8 +188,11 @@
                 </ul>
             </nav>
         </section>
-        <section class="sec_lireses">
-            <div class="TitleLireses"><h1>◆紹介企業：リレセス株式会社</h1></div>
+        <section class="sec_lireses" id="ilireses">
+            <div class="TitleLireses">
+                <h1>◆紹介企業：リレセス株式会社</h1>
+                <a href="https://www.lireses.co.jp/"><img class="liresesImg" src="../../img/LIReses.png" /></a>
+            </div>
             <nav>
                 <ul>
                     <li class="LiresesBox">
@@ -189,7 +203,6 @@
                            ※都内、大阪での就業者のみ応募可。<Br>
                            <a href="https://www.lireses.co.jp/">リレセス株式会社の詳細はこちらから！</a>
                         </p>
-                        <a href="https://www.lireses.co.jp/"><img class="liresesImg" src="../../img/LIReses.png" /></a>
                     </li>
                     <li>
                         <a href="https://www.lireses.co.jp/"><img class="icatchImg" src="../../img/liresesicatch.png" /></a>
@@ -197,9 +210,89 @@
                 </ul>
             </nav>
         </section>
-        <section class="sec_Price">
-            <div class="TitlePrice"><h1>◆料金</h1></div>
+        <section class="sec_Price" id="iPrice">
+            <div class="TitlePrice">
+                <h1>コース・料金</h1>
+            </div>
+            <nav>
+                <li>
+                    <table class="PrinceTable">
+                        <tbody>
+                            <tr>    
+                                <td class="tag">コース名</td>
+                                <td class="tag">WEB製作コース</td>
+                                <td class="tag">WEB開発コース</td>
+                            </tr>
+                            <tr>    
+                                <td class="tag">価格</td>
+                                <td>100,000(税抜）</td>
+                                <td>150,000(税抜）</td>
+                            </tr>
+                            <tr>   
+                                <td class="tag">回数</td>
+                                <td>2か月（16回）</td>
+                                <td>3か月（24回）</td>
+                            </tr>
+                            <tr>    
+                                <td class="tag">サポート</td>
+                                <td>チャットサポート無料</td>
+                                <td>チャットサポート無料<br>企業紹介</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </nav>
         </section>
+        <section class="sec_msg">
+            <h1>運営代表メッセージ</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="wrap">
+                            <p>
+                                ここまで読み進めて頂きありがとうございます。<br>
+                                昨今のプログラミングスクールは高額なものや、受講者に対して親切でない<br>
+                                セールスをしているスクールが散見されます。<br>
+                                挫折率90%と言われる初心者のプログラミング学習で、そのようなリスクをとるのは<br>
+                                難しい事だと思います。<br>
+                                かと言って、1人で学習するのはハードルが高いですよね。<br>
+                                そこで、本スクールではできる限り安価で、完全マンツーマンでプログラミング<br>
+                                を学習していきます。<Br>
+                                そして、SEになるために必要な要素を身に着けつつ、受講者に寄り添った形で講義を行います。<br>
+                                その末に、SEとしての第一歩を踏んでもらいたいと考えています。
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="pname">関　友也</p>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="sec_inquiry" id="iinquiry">
+            <h1>無料相談受付中！</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="wrap">
+                            <p>
+                                無料相談では、プログラミング学習の行い方から学習のゴールを含め詳しく
+                                お話しさせていただきます！
+                                そのうえで、本スクールを受講したいと思っていただけたら本スクールの説明を
+                                させていただきます！
+                                まずは気軽にご相談ください♪
+                                <Br><Br>
+                                ※押し売り等は一切致しませんのでご気軽にご相談ください。
+                            </p>
+                        </div>
+                        <button class="btn_inquiry">無料相談へ▼</button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <footer>
+            <p>© All rights reserved by narou engineering school.</p>
+        </footer>
     </body>
 
 </html>
