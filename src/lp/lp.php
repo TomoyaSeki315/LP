@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" media="all" href="lp.css" />
+<link rel="stylesheet" media="all" href="lp_sp.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
     </head>
