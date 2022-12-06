@@ -10,6 +10,7 @@
     <script>
     </script>
     <body>
+    <div class="Bwrap">
         <header>
             <nav>
                 <ui style="
@@ -26,6 +27,27 @@
                     <li class="h_li li_link"><a href="#iinquiry">無料相談</a></li>
                 </ui>
             </nav>
+        </header>
+        <header class="sp_header">
+            <img class="logo" src="../../img/LPLOGO.png" />
+            <div class="drawer">        
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>            
+            </label>        
+            
+            <nav class="nav">                    
+            <ul class="nav-list">            
+                <li>ホーム</li>                
+                <li><a href="#iworries">学習の悩み</a></li> </li>                
+                <li><a href="#ipoint">なろえんのポイント</a></li>                
+                <li><a href="#icurriculum">カリキュラム</a></li>                
+                <li><a href="#ilireses">紹介企業</a></li>   
+                <li><a href="#iPrice">コース・料金</a></li>    
+                <li><a href="#iinquiry">無料相談</a></li>         
+            </ul>            
+            </nav>        
+            </div>    
         </header>
         <button class="infobtn">ご相談はこちらから！</button>
         <section class="title_section"> <!--タイトル-->
@@ -100,13 +122,14 @@
             <nav>
                 <ul class="ul_anypoint">
                     <li class="re_point1_2">
-                        <img class="re_pointImg" src="../../img/point1.png" />
-                        <img class="re_pointImg" src="../../img/point2.png" />
+                        <img class="re_pointImg p1" src="../../img/point1.png" />
+                        <img class="re_pointImg p2" src="../../img/point2.png" />
                     </li>
                     <li class="re_point3_4">
-                        <img class="re_pointImg_btm" src="../../img/point3.png" />
-                        <img class="re_pointImg_btm" src="../../img/point4.png" />
+                        <img class="re_pointImg_btm p3" src="../../img/point3.png" />
+                        <img class="re_pointImg_btm p4" src="../../img/point4.png" />
                     </li>
+                    <li><p class="pointmsg">以上の４つのポイントを重視します！</p></li>
                 </ul>
             </nav>
         </section>
@@ -120,7 +143,7 @@
                 <div class="timeline">
                         <ul class="timeline-list">
                             <li class="timeline-list-item">
-                                <div class="date">1ヶ月</div>
+                                <div class="date">１ヶ月</div>
                                 <div class="content text-font-size">
                                     <div class="Carrow">
                                         <div class="boldtop"></div>
@@ -132,13 +155,23 @@
                                         </br>
                                         ②JavaScript 　　基礎講義&練習サイト作成
                                         </br>
-                                        ③PHP(Laravel)    基礎講義&練習サイト作成
+                                        ③PHP基礎講義
+                                    </p>
+                                    <p class="sp_curriculumTxt" style="display:none">
+                                        基礎講義/練習サイト作成<br>
+                                        ①HTML/CSS<br>
+                                        　基礎講義&練習サイト作成
+                                        </br>
+                                        ②JavaScript <br>
+                                        　基礎講義&練習サイト作成
+                                        </br>
+                                        ③PHP基礎講義<br> 
                                     </p>
                                 </div>
                                 <img class="curriculumImg" src="../../img/1month.png" />
                             </li>
                             <li class="timeline-list-item">
-                                <div class="date">2ヶ月</div>
+                                <div class="date">２ヶ月</div>
                                 <div class="content text-font-size">
                                     <div class="Carrow">
                                         <div class="boldtop"></div>
@@ -146,15 +179,24 @@
                                     </div>
                                     <p class="curriculumTxt">
                                         ポートフォリオサイト作成<br><br>
+                                        ①参考サイト選定<br>
                                         ①画面設計/デザイン作成<br>
-                                        ②コーディング
+                                        ②コーディング<br>
+                                        ④WEBに公開
                                         </br>
+                                    </p>
+                                    <p class="sp_curriculumTxt" style="display:none">
+                                        ポートフォリオサイト作成<br><br>
+                                        ①参考サイト選定<br>
+                                        ①画面設計/デザイン作成<br>
+                                        ②コーディング<br>
+                                        ④WEBに公開
                                     </p>
                                 </div>
                                 <img class="curriculumImg2" src="../../img/PORTFOLIO_LOGO.png" />
                             </li>
                             <li class="timeline-list-item">
-                                <div class="date">3ヶ月</div>
+                                <div class="date">３ヶ月</div>
                                 <div class="content text-font-size">
                                     <div class="Carrow">
                                         <div class="boldtop"></div>
@@ -162,16 +204,24 @@
                                     </div>
                                     <p class="curriculumTxt">
                                         業務系デモサイト開発<br><br>
-                                        ①Laravel講義<br>
-                                        ②デモサイト作成<br>
+                                        ①Laravel環境構築<br>
+                                        ②Laravel講義<br>
+                                        ③デモサイト作成<br>
+                                    </p>
+                                    <p class="sp_curriculumTxt" style="display:none">
+                                        業務系デモサイト開発<br><br>
+                                        ①Laravel環境構築<br>
+                                        ②Laravel講義<br>
+                                        ③デモサイト作成<br>
                                     </p>
                                 </div>
                                 <img class="curriculumImg2" src="../../img/Laravel_logo.png" />
                             </li>
                             <li class="timeline-list-item-last">
-                                <div class="date">ゴール！</div>
+                                <div class="date goal"></div>
                                 <div class="content text-font-size">
                                 </div>
+                                <p class="goal">ゴール！</p>
                             </li>
                         </ul>
                     </div>
@@ -200,7 +250,7 @@
                         <p class="LiresesTxt">
                             本スクールを3か月受講頂いた方で、希望者に転職/就職先として<Br>
                            リレセス株式会社をご紹介致します。<br>
-                           会社側が受講内容を理解してくださっている状態でのスタートになります。<Br>
+                           会社側が受講内容を理解しているのでご安心ください。<Br>
                            ※都内、大阪での就業者のみ応募可。<Br>
                            <a href="https://www.lireses.co.jp/">リレセス株式会社の詳細はこちらから！</a>
                         </p>
@@ -262,7 +312,19 @@
                                 そして、SEになるために必要な要素を身に着けつつ、受講者に寄り添った形で講義を行います。<br>
                                 その末に、SEとしての第一歩を踏んでもらいたいと考えています。
                             </p>
-                        </div>
+                            <p class="sp" style="display:none;">
+                                ここまで読み進めて頂きありがとうございます。<br>
+                                昨今のプログラミングスクールは高額なものや、受講者に対して親切でない
+                                セールスをしているスクールが散見されます。<br>
+                                挫折率90%と言われる初心者のプログラミング学習で、そのようなリスクをとるのは
+                                難しい事だと思います。<br>
+                                かと言って、1人で学習するのはハードルが高いですよね。<br>
+                                そこで、本スクールではできる限り安価で、完全マンツーマンでプログラミング
+                                を学習していきます。<Br>
+                                そして、SEになるために必要な要素を身に着けつつ、受講者に寄り添った形で講義を行います。<br>
+                                その末に、SEとしての第一歩を踏んでもらいたいと考えています。
+                            </p>
+                        </div> 
                     </li>
                     <li>
                         <p class="pname">関　友也</p>
@@ -286,7 +348,9 @@
                                 ※押し売り等は一切致しませんのでご気軽にご相談ください。
                             </p>
                         </div>
+                        <a href="https://lin.ee/sr94lGT" style="text-decoration:none;">
                         <button class="btn_inquiry">無料相談へ▼</button>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -294,6 +358,7 @@
         <footer>
             <p>© All rights reserved by narou engineering school.</p>
         </footer>
+    </div>
     </body>
 
 </html>

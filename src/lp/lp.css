@@ -25,6 +25,10 @@ img {
     max-width: 100%;
 }
 
+.sp_header{
+    display: none;
+}
+
 .h_li{
     display: inline;
 }
