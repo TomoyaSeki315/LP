@@ -690,3 +690,48 @@ img {
     background-color: #138f18b3;
     border: 3px solid #063a06;
 }
+
+
+@media screen and (min-width: 1400px) {
+
+    .li_link{
+        font-size: 25px;
+    }
+    .threeContents{
+        left:13vw;
+    }
+    .threeContentBox {
+        transform: scale(0.7);
+    }
+    .dog{
+        transform: scale(0.8);
+        bottom:85vw;
+        left:-5vw;
+    }
+    .li_worries{
+        width: 425px;
+    }
+    .nav_worries{
+        margin-left:0px;
+        width: 90%;
+    }
+    .sec_resolution {
+        height: 180vw;
+    }
+    .ul_anypoint {
+        position: relative;
+        transform: scale(0.7);
+        margin-left: -16%;
+        bottom: 15vw;
+    }
+    .timeline {
+        transform: scale(0.7);
+        width: 140vw;
+        margin: 28px auto;
+        margin-top: -13vw;
+        margin-left: -22vw;
+    }
+    .goal{
+        font-size: 40px;
+    }
+}
