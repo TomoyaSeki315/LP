@@ -1,0 +1,249 @@
+
+header{
+    width:100%;
+    display: flex;
+    background-color: #fff;
+}
+
+footer{
+    text-align: center;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-weight: 900;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+li{
+    list-style:none;
+}
+nav{
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+p{
+    margin:0;
+}
+.sp_header{
+    display: none;
+}
+
+.h_li{
+    display: inline;
+}
+
+.li_link{
+    margin-right: auto;
+    padding-top: 18px;
+    font-size: 15px;
+    border-right: solid 2px gray;
+}
+.logo{
+    
+}
+
+.h_logo{
+    margin-right: 25%;
+}
+
+.s_top{
+    background: repeating-linear-gradient(45deg, rgb(141 224 169 / 26%) 0, rgb(141 224 169 / 49%) 1px, white 5px, white 10px);
+    height: 45vw;
+    padding-top: 3vw;
+    padding-left: 5vw;
+}
+
+.s-top-body{
+    width: 85vw;
+    height: 50vw;
+    display: flex;
+}
+
+.s-top-left{
+    padding-top: 6vw;
+    width: 45vw;
+    height: 38vw;
+}
+
+.s-top-right{
+    width: 40vw;
+    height: 38vw;
+    float: right;
+}
+
+.s-top-bold{
+    font-size: 45px;
+    font-weight:900;
+}
+
+.s-top-subbold{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.s-top-red{
+    font-size: 35px;
+    color: red;
+    border: 14px double;
+    padding-left: 7vw;
+}
+
+.nikuBox{
+    position: absolute;
+    right: -3vw;
+    top: 3vw;
+    transform: rotate(30deg);
+}
+
+.dogBox{
+    position: sticky;
+    z-index: 100;
+
+}
+
+.btnfree {
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    width: 43vw;
+    height: 8vw;
+    border-radius: 35px;
+    font-size: 45px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(179deg, rgba(27, 135, 10, 1), rgba(176, 239, 178, 1) 77%, rgba(85, 154, 63, 1));  }
+  
+  .btnfree:hover {
+    box-shadow: 0 0 rgba(0, 0, 0, .3);
+  }
+
+  .s_worrie{
+    height: 75vw;
+  }
+  .worrieBox{
+    margin: 5vw auto;
+    width: 60vw;
+    height: 45vw;
+    background-color: #b7b3b3c4;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 60%);
+    border-radius: 10px;
+  }
+
+  .worrieBox h1{
+    text-align: center;
+    padding: 3vw 0;
+    font-size: 30px;
+    border-width: 5vw;
+    height: 0vw;
+  }
+
+  .underline{
+    width: 17vw;
+    height: 5px;
+    background-color: green;
+    position: relative;
+    bottom: 20px;
+    margin: 0 auto;
+  }
+  .worrieContentBox{
+    display: flex;
+    padding: 0 5vw;
+    width: 50vw;
+    height: 7vw;
+    margin: 1vw 0;
+    border-bottom: 2px solid #b9b8b8;
+  }
+  .worrieContentBox-last{
+    display: flex;
+    padding: 0 5vw;
+    width: 50vw;
+    height: 7vw;
+    margin: 1vw 0;
+  }
+  .img_worries{
+    margin-right: 5vw;
+  }
+  .hdnBox{
+    height: 95px;
+    width: 95px;
+    margin-right: 5vw;
+  }
+  .worrieContentBox p{
+    margin: auto 0;
+    font-size: 25px;
+  }
+
+  .worrieContentBox-last p{
+    margin: auto 0;
+    font-size: 25px;
+  }
+
+  .arrow{
+    margin: 0 auto;
+    width: 15vw;
+    height: 15vw;
+    border: 1vw solid;
+    border-color: transparent transparent #83ed7c #83ed7c;
+    transform: rotate(-45deg);
+  }
+
+  .sec_resolution{
+    height: 100vw;;
+  }
+  .sec_resolution h1{
+    text-align: center;
+    font-size: 50px;
+    background-color: #00ff004f;
+    height: 9vw;
+    padding-top: 5vw;
+  }
+  .strong{
+    display: contents;
+    color: red;
+  }
+  .resolutionBox{
+    padding: 4vw;
+    width: 65vw;
+    height: 35vw;
+    border-radius: 70px;
+    background-color: red;
+  }
+
+  .resolutionBox .Number{
+    width: 5vw;
+    height: 5vw;
+    font-size: 65px;
+    color: grey;
+    background-color: black;
+    line-height: 5vw;
+  }
+
+  .resolutionBox .NumText{
+    font-size: 22px;
+  }
+
+  .resolutionBox .title{
+    display: flex;
+    margin-left: 11vw;
+    height: 5vw;
+    width: 45vw;
+    background-color: palegoldenrod;
+  }
+
